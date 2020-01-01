@@ -10,6 +10,8 @@ import { HomescreenComponent } from "./pages/homescreen/homescreen.component";
 import { TransactionsscreenComponent } from "./pages/transactionsscreen/transactionsscreen.component";
 import { AnalyticsscreenComponent } from "./pages/analyticsscreen/analyticsscreen.component";
 import { SettingsscreenComponent } from "./pages/settingsscreen/settingsscreen.component";
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
 
 @NgModule({
   declarations: [
@@ -21,7 +23,7 @@ import { SettingsscreenComponent } from "./pages/settingsscreen/settingsscreen.c
     AnalyticsscreenComponent,
     SettingsscreenComponent
   ],
-  imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule],
+  imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule, ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })],
   providers: [],
   bootstrap: [AppComponent]
 })
