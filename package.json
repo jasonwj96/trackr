@@ -29,6 +29,9 @@
     "tslib": "^1.10.0",
     "zone.js": "~0.9.1",
     "@angular-devkit/build-angular": "^0.803.21",
+    "typescript": "~3.5.3"
+  },
+  "devDependencies": {
     "@angular/language-service": "~8.2.14",
     "@types/jasmine": "~3.3.8",
     "@types/jasminewd2": "~2.0.3",
@@ -43,10 +46,8 @@
     "karma-jasmine-html-reporter": "^1.4.0",
     "protractor": "~5.4.0",
     "ts-node": "~7.0.0",
-    "tslint": "~5.15.0",
-    "typescript": "~3.5.3"
+    "tslint": "~5.15.0"
   },
-  "devDependencies": {},
   "engines": {
     "node": "12.13.1",
     "npm": "6.13.4"
