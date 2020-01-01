@@ -1,22 +1,16 @@
+//Install express server
 const express = require("express");
-const bodyParser = require("body-parser");
 const path = require("path");
 
-const api = require("./server/routes/api");
-
-const port = 3000;
 const app = express();
 
-app.use(express.static(path.join(__dirname, "dist/trackr")));
-app.use(bodyParser.urlencoded({ extended: true }));
-app.use(bodyParser.json());
+// Serve only the static files form the dist directory
+// Replace the '/dist/<to_your_project_name>'
+app.use(express.static(__dirname + "/dist/trackr"));
 
-app.use("/api", api);
-
-app.get("*", (req, res) => {
-  res.sendFile(path.join(__dirname, "dist/trackr/index.html"));
+app.get("*", function(req, res) {
+  // Replace the '/dist/<to_your_project_name>/index.html'
+  res.sendFile(path.join(__dirname + "/dist/trackr/index.html"));
 });
-
-app.listen(port, function() {
-  console.log("server running on localhost:" + port);
-});
+// Start the app by listening on the default Heroku port
+app.listen(process.env.PORT || 8080);
