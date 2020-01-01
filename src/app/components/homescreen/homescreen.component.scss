@@ -1,0 +1,19 @@
+@import "../../themes/dark_theme";
+
+.homescreen-container {
+  height: 100%;
+  width: 100%;
+  padding-bottom: 60px;
+  overflow: scroll;
+
+  .list-title {
+    background-color: $list-title-bg;
+    color: $list-title-color;
+    padding: 15px 15px;
+
+    p {
+      margin: 0;
+      padding: 0;
+    }
+  }
+}

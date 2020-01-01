@@ -1,0 +1,19 @@
+<div class="transaction-container">
+  <div [ngSwitch]="data.category" [ngClass]="transactionIconClass">
+    <i *ngSwitchCase="'Entertainment'" class="fas fa-tv"></i>
+    <i *ngSwitchCase="'Transport'" class="fas fa-car"></i>
+    <i *ngSwitchCase="'Music'" class="fas fa-music"></i>
+    <i *ngSwitchCase="'Miscellaneous'" class="fas fa-asterisk"></i>
+    <i *ngSwitchCase="'Food'" class="fas fa-utensils"></i>
+    <i *ngSwitchCase="'Income'" class="fas fa-dollar-sign"></i>
+    <i *ngSwitchCase="''" class="fas fa-asterisk"></i>
+  </div>
+  <div class="transaction-data">
+    <p class="title">{{ data.title }}</p>
+    <p class="description">{{ data.creationDate }} - {{ data.category }}</p>
+  </div>
+  <p class="amount">
+    <span *ngIf="!data.isIncome">-&nbsp;</span>
+    {{ data.amount | currency }}
+  </p>
+</div>

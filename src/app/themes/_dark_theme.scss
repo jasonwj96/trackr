@@ -1,0 +1,25 @@
+//Navmenu
+$navmenu-bg: #0051ee;
+$navmenu-icon-color: #fff;
+$navmenu-btn-color: #fff;
+$selected-navmenu-btn-bg: darken($navmenu-bg, 15%);
+$selected-navmenu-btn-color: #fff;
+
+//Transaction
+$transaction-bg: #121214;
+$transaction-title-color: #fff;
+$transaction-date-color: #fff;
+$transaction-icon-color: #ffffff;
+$transaction-icon-default-bg: #ee0000;
+$transaction-desc-color: #a8a8a8;
+$transaction-amount-color: #fff;
+$transaction-icon-entertainment-bg: #ee0000;
+$transaction-icon-transport-bg: #008aee;
+$transaction-icon-music-bg: #ffb800;
+$transaction-icon-miscellaneous-bg: #ae00ff;
+$transaction-icon-food-bg: #ff9900;
+$transaction-icon-income-bg: #4ccf00;
+
+//Homescreen
+$list-title-bg: #1f1f1f;
+$list-title-color: #fff;

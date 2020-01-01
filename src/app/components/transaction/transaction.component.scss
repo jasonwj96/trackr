@@ -1,0 +1,86 @@
+@import "../../themes/dark_theme";
+
+.transaction-container {
+  display: flex;
+  width: 100%;
+  background-color: $transaction-bg;
+  height: auto;
+  padding: 10px 20px;
+  justify-content: center;
+  align-items: center;
+
+  &:hover {
+    background-color: lighten($transaction-bg, 10%);
+  }
+
+  .icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $transaction-icon-default-bg;
+    min-height: 50px;
+    min-width: 50px;
+    border-radius: 50%;
+
+    i {
+      color: $transaction-icon-color;
+      font-size: 1em;
+    }
+  }
+
+  .icon.entertainment {
+    background-color: $transaction-icon-entertainment-bg;
+  }
+
+  .icon.transport {
+    background-color: $transaction-icon-transport-bg;
+  }
+
+  .icon.music {
+    background-color: $transaction-icon-music-bg;
+  }
+  .icon.miscellaneous {
+    background-color: $transaction-icon-miscellaneous-bg;
+  }
+  .icon.food {
+    background-color: $transaction-icon-food-bg;
+  }
+
+  .icon.income {
+    background-color: $transaction-icon-income-bg;
+  }
+
+  .transaction-data {
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    margin: 0 0 0 20px;
+
+    p {
+      margin: 0;
+      padding: 0;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .title {
+      color: $transaction-title-color;
+      font-size: 0.8em;
+      margin: 0 0 5px;
+      overflow: hidden;
+    }
+
+    .description {
+      color: $transaction-desc-color;
+      font-size: 0.8em;
+    }
+  }
+
+  .amount {
+    display: flex;
+    color: $transaction-amount-color;
+  }
+}

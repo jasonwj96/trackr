@@ -1,0 +1,50 @@
+@import "../../themes/dark_theme";
+
+.navmenu-container {
+  display: flex;
+  height: 60px;
+  background-color: $navmenu-bg;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+
+  .navmenu-btn {
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: center;
+    min-width: 60px;
+    padding: 15px 10px 5px 10px;
+
+    &:hover {
+      background-color: $selected-navmenu-btn-bg;
+      color: $selected-navmenu-btn-color;
+    }
+
+    i {
+      color: $navmenu-icon-color;
+      font-size: 1.5em;
+    }
+
+    p {
+      font-size: 0.8em;
+      color: $navmenu-btn-color;
+      margin: 5px 0;
+      padding: 0;
+    }
+
+    p.hidden {
+      display: none;
+    }
+  }
+
+  .selected {
+    background-color: $selected-navmenu-btn-bg;
+    color: $selected-navmenu-btn-color;
+  }
+}

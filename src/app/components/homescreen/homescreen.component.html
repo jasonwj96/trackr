@@ -1,0 +1,14 @@
+<div class="homescreen-container">
+  <div class="list-title">
+    <p>Most recent transactions</p>
+  </div>
+  <div *ngFor="let transaction of transactions">
+    <app-transaction [data]="transaction"></app-transaction>
+  </div>
+  <div class="list-title">
+    <p>Active subscriptions</p>
+  </div>
+  <div *ngFor="let transaction of activeSubscriptions">
+    <app-transaction [data]="transaction"></app-transaction>
+  </div>
+</div>
