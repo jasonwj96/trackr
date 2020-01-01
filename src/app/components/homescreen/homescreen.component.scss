@@ -6,6 +6,81 @@
   padding-bottom: 60px;
   overflow: scroll;
 
+  .balance-panel {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+
+    p {
+      margin: 0;
+      padding: 0;
+    }
+
+    p.welcome-title {
+      color: $welcome-title-color;
+      font-size: 1.2em;
+      margin: 30px 0 20px 0;
+    }
+
+    p.balance-header {
+      color: $balance-header-color;
+      margin: 10px 0;
+    }
+
+    p.balance-amount {
+      font-family: "Roboto", sans-serif;
+      color: $balance-amount-color;
+      margin: 0 0 20px 0;
+      font-weight: 100;
+      font-size: 4em;
+    }
+  }
+
+  .savings-panel {
+    display: flex;
+    width: 100%;
+    height: auto;
+    padding: 40px 20px;
+    justify-content: space-evenly;
+    align-items: center;
+
+    .savings-data {
+      display: flex;
+      flex-flow: column;
+
+      p.savings-title {
+        color: $savings-title-color;
+        margin: 0 0 10px 0;
+        padding: 0;
+      }
+      .savings-amount {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        p {
+          margin: 0;
+          padding: 0;
+          color: $savings-amount-color;
+          font-size: 1.5em;
+        }
+
+        i {
+          font-size: 2.5em;
+          margin: 0 10px 0 0;
+        }
+
+        i.fa-caret-up {
+          color: $savings-arrow-up;
+        }
+
+        i.fa-caret-down {
+          color: $savings-arrow-down;
+        }
+      }
+    }
+  }
+
   .list-title {
     background-color: $list-title-bg;
     color: $list-title-color;
