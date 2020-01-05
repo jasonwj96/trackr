@@ -1,5 +1,8 @@
 <div class="transaction-container">
-  <div [ngSwitch]="data.category" [ngClass]="transactionIconClass">
+  <div
+    [ngSwitch]="categoryList[data.category]"
+    [ngClass]="transactionIconClass"
+  >
     <i *ngSwitchCase="'Entertainment'" class="fas fa-tv"></i>
     <i *ngSwitchCase="'Transport'" class="fas fa-car"></i>
     <i *ngSwitchCase="'Music'" class="fas fa-music"></i>
@@ -10,7 +13,9 @@
   </div>
   <div class="transaction-data">
     <p class="title">{{ data.title }}</p>
-    <p class="description">{{ data.creationDate }} - {{ data.category }}</p>
+    <p class="description">
+      {{ data.creationDate }} - {{ categoryList[data.category] }}
+    </p>
   </div>
   <p class="amount">
     <span *ngIf="!data.isIncome">-&nbsp;</span>

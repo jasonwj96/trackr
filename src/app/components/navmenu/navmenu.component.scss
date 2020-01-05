@@ -36,15 +36,11 @@
         font-size: 1.5em;
       }
 
-      p {
+      .btn-text {
         font-size: 0.8em;
         color: $navmenu-btn-color;
         margin: 5px 0;
         padding: 0;
-      }
-
-      p.hidden {
-        display: none;
       }
     }
   }

@@ -1,19 +1,19 @@
 import { async, ComponentFixture, TestBed } from "@angular/core/testing";
 
-import { HomescreenComponent } from "./homescreen.component";
+import { DashboardComponent } from "./dashboard.component";
 
 describe("HomescreenComponent", () => {
   let component: HomescreenComponent;
-  let fixture: ComponentFixture<HomescreenComponent>;
+  let fixture: ComponentFixture<DashboardComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [HomescreenComponent]
+      declarations: [DashboardComponent]
     }).compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(HomescreenComponent);
+    fixture = TestBed.createComponent(DashboardComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

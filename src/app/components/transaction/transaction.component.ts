@@ -9,13 +9,22 @@ import { Transaction } from "src/app/models/Transaction";
 export class TransactionComponent implements OnInit {
   @Input() data: Transaction;
   transactionIconClass: string;
-  titleCharLimit: number = 18;
+  titleCharLimit = 18;
+
+  categoryList: string[] = [
+    "Entertainment",
+    "Food",
+    "Transport",
+    "Income",
+    "Miscellaneous",
+    "Music"
+  ];
 
   constructor() {}
 
   ngOnInit() {
     this.transactionIconClass =
-      this.data.category.toLocaleLowerCase() + " icon";
+      this.categoryList[this.data.category].toLocaleLowerCase() + " icon";
 
     if (this.data.title.length > this.titleCharLimit) {
       this.data.title = this.data.title.substr(0, this.titleCharLimit) + "...";

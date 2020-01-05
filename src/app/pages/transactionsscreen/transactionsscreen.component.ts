@@ -1,15 +1,12 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit } from "@angular/core";
 
 @Component({
-  selector: 'app-transactionsscreen',
-  templateUrl: './transactionsscreen.component.html',
-  styleUrls: ['./transactionsscreen.component.scss']
+  selector: "app-transactionsscreen",
+  templateUrl: "./transactionsscreen.component.html",
+  styleUrls: ["./transactionsscreen.component.scss"]
 })
 export class TransactionsscreenComponent implements OnInit {
+  constructor() {}
 
-  constructor() { }
-
-  ngOnInit() {
-  }
-
+  ngOnInit() {}
 }

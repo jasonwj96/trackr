@@ -1,7 +1,7 @@
 export class Transaction {
   title: string;
   amount: number;
-  category: string;
+  category: number;
   isIncome: boolean;
   creationDate: string;
 }
